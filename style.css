@@ -1,0 +1,143 @@
+* {
+    padding: 0;
+    margin: 0;
+    color: #ffffff;
+    box-sizing: border-box;
+    border: 0;
+    outline: none;
+
+}
+
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.weather {
+    margin: 150px auto;
+    width: auto;
+    height: auto;
+    border: 1px solid #55707e;
+    padding: 10px;
+    background: linear-gradient(to bottom, #3594bf 0%, rgba(255, 255, 255, 0) 100%), #53a6cb;
+    font-family:Arial, Helvetica, sans-serif ;
+    text-align: center;
+    margin-bottom: padding *2;
+    overflow: hidden;
+    transition: 0.6s ease-out;
+
+}
+
+.search {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 5px;
+    color: #55707e;
+}
+
+.searchInput {
+    color: #06283d;
+    background-color: #3594bf;
+    width: 80%;
+    padding-right: 10px;
+}
+
+.searchInput input {
+  color: #06283d;
+  width: 100%;
+  font-size: auto;
+  font-weight: 500;
+  text-transform: capitalize;
+  border-radius: 20px;
+  background-color: #bad8e7;
+  padding: 3px
+}
+
+.searchInput input::placeholder {
+    font-size: auto;
+    font-weight: 500;
+    color: #06283d;
+}
+
+.searchButton {
+    cursor: pointer;
+    width: 80px;
+    height: auto;
+    padding: 2px;
+    background-color: #1b6796;
+    border-radius: 20px;
+    text-align: center;
+    border: 1px solid #bad8e7;
+}
+
+
+.searchButton:active {
+    filter: brightness(50%);
+}
+
+.searchButton:hover {
+  color: #fff;
+  background-color: #06283d;
+}
+
+
+.weatherInner {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: padding;
+}
+
+.location {
+    text-align: center;
+    margin-bottom: padding *2;
+    font-size: 20px;
+    padding: 5px;
+    user-select: none;
+}
+
+.mainTemp {
+    display: flex;
+    justify-content: center;
+    user-select: none;
+}
+
+.temperature {
+    width: 100px;
+    height: 80px;
+   font-size: 60px;
+   position: relative;
+   left: 10px;
+}
+
+.icon {
+    width: 100px;
+    height: 80px;
+    position: relative;
+    bottom: 15px;
+    right: 10px;
+}
+
+.flTemp {
+    display: flex;
+    justify-content: center;
+    padding-bottom: 10px;
+    user-select: none;
+}
+.feels_like_value {
+    padding-left: 10px;
+}
+
+.details {
+    display: grid;
+    grid-template-areas:
+    'details_item details_item'
+    'details_item details_item';
+    user-select: none;
+}
+
+.wind {
+    padding-bottom: 10px;
+}
